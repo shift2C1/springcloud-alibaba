@@ -1,0 +1,25 @@
+server:
+  port: 7001
+spring:
+  profiles:
+    active: dev
+  application:
+    name: service-consumer
+  cloud:
+    nacos:
+      discovery:
+        #        开启向nacos注册
+        enabled: true
+        #        nacos 服务端地址
+        server-addr: 127.0.0.1:8848
+#        配置中心：在系统启动文件中有效
+#      config:
+#        #  配置中心地址
+#        server-addr: 127.0.0.1:8848
+#        enabled: true
+# accutor 监控
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: *

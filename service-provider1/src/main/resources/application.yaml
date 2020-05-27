@@ -1,0 +1,18 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: service-provider
+  cloud:
+    nacos:
+      discovery:
+#        开启向nacos注册,不向nacos注册设置为false
+        enabled: true
+#        nacos 服务端地址
+        server-addr: 127.0.0.1:8848
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: *

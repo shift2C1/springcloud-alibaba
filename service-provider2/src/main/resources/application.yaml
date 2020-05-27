@@ -1,0 +1,20 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: service-provider
+  cloud:
+    nacos:
+      discovery:
+#        开启向nacos注册
+        enabled: true
+#        nacos 服务端地址
+        server-addr: 127.0.0.1:8848
+#        access-key: 账号
+#        secret-key: 密码
+# accutor 监控
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: *
